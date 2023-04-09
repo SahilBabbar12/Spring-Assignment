@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+    <!-- defining bean of MessageService -->
+    <bean id="messageService" class="com.knoldus.MessageService" >
+        <property name="message" value="message from MessageService..."></property>
+    </bean>
+
+    <!-- defining bean of MessagePrinter-->
+    <bean id="messagePrinter" class="com.knoldus.MessagePrinter" autowire="byType">
+    </bean>
+</beans>
